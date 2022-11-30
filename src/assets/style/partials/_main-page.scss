@@ -1,0 +1,38 @@
+.main-page__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.2em;
+}
+
+.section__text {
+  font-size: 16px;
+  max-width: 700px;
+  
+  @media (min-width: 700px) {
+    font-size: 18px;
+  }
+}
+
+.image_main-page {
+  border: 2px #5e5e5e solid;
+  border-radius: 6px;
+  max-width: 650px;
+  height: auto;
+  width: 100%;
+}
+
+.section__list {
+  margin-left: 2em;
+}
+
+.title {
+  margin-top: 2em;
+}
+
+.section__title {
+  margin-top: 1em;
+}
+
+// .page__body_start {
+//   background-image: url('https://res.cloudinary.com/bartoshevich/image/upload/v1668858171/RSSchool/song/fon.jpg');
+// }

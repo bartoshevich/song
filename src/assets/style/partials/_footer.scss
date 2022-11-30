@@ -1,0 +1,60 @@
+.footer::before {
+  content: "* * *";
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 2em;
+}
+
+.section__footer {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: .5em;
+  opacity: .7;
+ 
+  @media (min-width: 415px) {
+    flex-direction: row;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // max-width: 15ch;
+  line-height: 1.8;
+  list-style: none;
+  padding: 0;
+ 
+  @media (min-width: 415px) {
+    margin-right: -67px;
+  }
+}
+
+.footer__item::after,
+.contact__item::after {
+  content: "";
+  color: $text-colour;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 0 .5em 0 .34em;
+}
+
+.rss__logo {
+  width: var(--space-2xl);
+}
+
+.link--footer {
+  opacity: .7;
+  transition: all .5s linear;
+}
+
+.link--footer:hover {
+  opacity: 1;
+  transition: all .5s linear;
+}

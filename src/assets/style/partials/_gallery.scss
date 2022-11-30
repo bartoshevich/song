@@ -1,0 +1,81 @@
+.link_game-page {
+  text-transform: uppercase;
+  transition: all .4s ease-in;
+}
+
+.link_game-page:hover {
+  font-size: larger ;
+}
+
+.block__section {
+  margin: 2em 0;
+}
+
+.block__description {
+  max-width: 70ch;
+}
+
+.block__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+  padding: 1em 0;
+  margin-bottom: 6em;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+.record__box_gallery {
+  height: fit-content;
+}
+
+.audio-card_gallery {
+  padding: .5em;
+  border-radius: 0.25rem;
+  border: 1px solid #5e5e5e;
+  background-color: #cacaca;
+
+  @media (min-width: 500px) {
+    max-width: 600px;
+    padding: 2em;
+  }
+
+  @media (min-width: 800px) {
+    padding: .3em;
+  }
+}
+
+.audio-card__name_first-name_gallery {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+
+  @media (min-width: 800px) {
+    font-size: var(--step--1);
+  }
+
+}
+
+.audio-card__name_second-name_gallery {
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.help {
+  position: relative;
+}
+
+.help::after {
+  content: "включите плеер";
+  position: absolute;
+  background-color: rgba($color: #fff, $alpha: .8);
+  top: -60px;
+  left: -30px;
+  line-height: 1.2;
+  padding: 2px;
+  border-radius: 6px;
+}

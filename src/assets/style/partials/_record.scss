@@ -1,0 +1,54 @@
+.record__wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+  position: relative;
+}
+
+.record__image_wrapper {
+  overflow: hidden;
+
+  @media (max-right: 936px) {
+    display: none;
+  }
+}
+
+.record__image {
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.record__box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url('/src/assets/images/paper.jpg');
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: 1180px) {
+    height: fit-content;
+  }
+
+  @media (min-width: 930px) {
+    width: 900px;
+  }
+}
+
+.record__image_play {
+  animation: play 6s linear infinite;
+}
+
+@keyframes play {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,61 @@
+.audio-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2em;
+  row-gap: 2em;
+}
+
+.audio-card__img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 200px;
+  height: auto;
+
+  @media (max-width: 400px) {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 1;
+  }
+}
+
+.audio-card__name {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+
+  @media (max-width: 400px) {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 2;
+  }
+}
+
+.audio {
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  @media (max-width: 400px) {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 3;
+  }
+}
+
+.audio-card__text {
+  grid-column: 1 / -1;
+  grid-row: 3;
+
+  @media (max-width: 400px) {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 4;
+  }
+}
+
+.audio-card__name_first-name {
+  font-size: var(--step-0); 
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: .5em;
+
+}
