@@ -18,7 +18,7 @@ async function preload() {
 
   let errorSound = new Audio;
   errorSound.src = './error.mp3'
-  errorSound.play();
+  errorSound.load();
 
 }
 
